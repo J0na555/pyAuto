@@ -19,7 +19,7 @@ def create():
 
     try:
         os.makedirs(project_path)
-        print(f"✅ Created local directory: {project_path}")
+        print(f"Created local directory: {project_path}")
     except FileExistsError:
         print(f" Directory {project_path} already exists")
 
