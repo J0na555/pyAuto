@@ -26,7 +26,7 @@ def create():
     try:
         g = Github(token)
         user = g.get_user()
-        repo = user.create_repo(folder_name, private=False)
+        repo = user.create_repo(folder_name, private=True)
         print(f"Successfully created GitHub repo: {folder_name}")
     except GithubException as e:
         print(f"Failed to create repo: {e}")
