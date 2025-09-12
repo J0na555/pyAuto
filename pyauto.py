@@ -37,3 +37,4 @@ if __name__ == "__main__":
         print("Usage: python create.py <project_name>")
     else:
         create()
+        
