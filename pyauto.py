@@ -144,7 +144,7 @@ def create():
                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         subprocess.run(["git", "add", "."], cwd=project_path, check=True,
                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        subprocess.run(["git", "commit", "-m", "Initial commit"], 
+        subprocess.run(["git", "commit", "-m", "Let there be code"], 
                       cwd=project_path, check=True,
                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         subprocess.run(["git", "branch", "-M", "main"], cwd=project_path, check=True,
